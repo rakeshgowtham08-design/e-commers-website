@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaShop - E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">NovaShop</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="orders.html">Orders</a>
+      <a href="auth.html" id="accountLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Simple • Fast • Modern</p>
+        <h1>Shop your everyday essentials.</h1>
+        <p>Browse products, view details, add to cart and place orders.</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Our products</p>
+          <h2>Featured Products</h2>
+        </div>
+        <input id="search" class="search" placeholder="Search products...">
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 NovaShop</footer>
+  <script src="app.js"></script>
+</body>
+</html>

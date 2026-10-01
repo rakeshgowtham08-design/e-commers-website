@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register - NovaShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">NovaShop</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+  </nav>
+</header>
+
+<main class="section narrow">
+  <div class="auth-grid">
+    <form id="loginForm" class="card form-card">
+      <h2>Login</h2>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button class="btn" type="submit">Login</button>
+      <p id="loginMsg" class="message"></p>
+    </form>
+
+    <form id="registerForm" class="card form-card">
+      <h2>Create Account</h2>
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password (6+ characters)" minlength="6" required>
+      <button class="btn" type="submit">Register</button>
+      <p id="registerMsg" class="message"></p>
+    </form>
+  </div>
+</main>
+<script src="app.js"></script>
+<script>setupAuth();</script>
+</body>
+</html>

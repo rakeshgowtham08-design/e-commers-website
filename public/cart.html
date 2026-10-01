@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - NovaShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">NovaShop</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+    <a href="orders.html">Orders</a>
+    <a href="auth.html">Account</a>
+  </nav>
+</header>
+<main class="section">
+  <h1>Your Shopping Cart</h1>
+  <div id="cartItems"></div>
+  <div id="cartSummary"></div>
+</main>
+<script src="app.js"></script>
+<script>loadCart();</script>
+</body>
+</html>
